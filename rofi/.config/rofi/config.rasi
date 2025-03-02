@@ -1,0 +1,106 @@
+configuration {
+  modes: [combi];
+  combi-modes: [drun, run];
+  drun-display-format: "{name}";}
+
+* {
+  font: "Mononoki Nerd Font 18";
+}
+
+window {
+  fullscreen: true;
+  transparency: "real";
+  padding: 36% 30%;
+  background-color: #28282895;
+  border-color: "transparent";
+}
+
+listview {
+  border: 0;
+  padding: 8 0 0;
+  scrollbar: true;
+}
+
+scrollbar {
+    width:        4px;
+    border:       0;
+    handle-color: #b4be98;
+    handle-width: 8px;
+    padding:      0 5;
+}
+
+entry {
+  placeholder: "";
+}
+
+textbox {
+  text-color: #ffffff;
+}
+
+
+element {
+  border: 0;
+  padding: 2px;
+}
+
+element.normal.normal {
+  background-color: "transparent";
+  text-color: #cdd6f4;
+}
+
+element.normal.urgent {
+  background-color: "transparent";
+  text-color: #fb4934;
+}
+
+element.normal.active {
+  background-color: "transparent";
+  text-color: #b4be98;
+}
+
+element.alternate.normal {
+  background-color: "transparent";
+  text-color: #cdd6f4;
+}
+
+element.alternate.urgent {
+  background-color: "transparent";
+  text-color: #fb4934;
+}
+
+element.alternate.active {
+  background-color: "transparent";
+  text-color: #b4be98;
+}
+
+sidebar {
+  border: 2px 0 0;
+  border-color: #b4be98;
+}
+
+inputbar {
+    spacing:    0;
+    text-color: #b4be98;
+    padding:    2px;
+    children:   [ prompt, textbox-prompt-sep, entry, case-indicator ];
+}
+
+case-indicator,
+entry,
+prompt,
+button {
+    spacing:    0;
+    text-color: #b4be98;
+}
+
+button.selected {
+    background-color: #282828;
+    text-color:       #d4be98;
+}
+
+textbox-prompt-sep {
+    expand:     false;
+    str:        ":";
+    text-color: #b4be98;
+    margin:     0 0.3em 0 0;
+}
