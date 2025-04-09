@@ -1,5 +1,5 @@
 [tools]
-node = "lts"
+node = "20"
 bun = "latest"
 go = "latest"
 python = "latest"
