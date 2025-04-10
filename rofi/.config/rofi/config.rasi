@@ -1,7 +1,8 @@
 configuration {
-  modes: [combi];
+  modes: [combi, calc];
   combi-modes: [drun, run];
-  drun-display-format: "{name}";}
+  drun-display-format: "{name}";
+}
 
 * {
   font: "Mononoki Nerd Font 18";
