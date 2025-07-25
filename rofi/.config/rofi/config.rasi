@@ -12,7 +12,7 @@ window {
   fullscreen: true;
   transparency: "real";
   padding: 36% 30%;
-  background-color: #28282895;
+  background-color: #1E1E2E95;
   border-color: "transparent";
 }
 
@@ -25,7 +25,7 @@ listview {
 scrollbar {
     width:        4px;
     border:       0;
-    handle-color: #b4be98;
+    handle-color: #94E2D5;
     handle-width: 8px;
     padding:      0 5;
 }
@@ -35,9 +35,8 @@ entry {
 }
 
 textbox {
-  text-color: #ffffff;
+  text-color: #CDD6F4;
 }
-
 
 element {
   border: 0;
@@ -46,42 +45,42 @@ element {
 
 element.normal.normal {
   background-color: "transparent";
-  text-color: #cdd6f4;
+  text-color: #CDD6F4;
 }
 
 element.normal.urgent {
   background-color: "transparent";
-  text-color: #fb4934;
+  text-color: #EBA0AC;
 }
 
 element.normal.active {
   background-color: "transparent";
-  text-color: #b4be98;
+  text-color: #CBA6F7;
 }
 
 element.alternate.normal {
   background-color: "transparent";
-  text-color: #cdd6f4;
+  text-color: #CDD6F4;
 }
 
 element.alternate.urgent {
   background-color: "transparent";
-  text-color: #fb4934;
+  text-color: #EBA0AC;
 }
 
 element.alternate.active {
   background-color: "transparent";
-  text-color: #b4be98;
+  text-color: #CBA6F7;
 }
 
 sidebar {
   border: 2px 0 0;
-  border-color: #b4be98;
+  border-color: #CBA6F7;
 }
 
 inputbar {
     spacing:    0;
-    text-color: #b4be98;
+    text-color: #94E2D5;
     padding:    2px;
     children:   [ prompt, textbox-prompt-sep, entry, case-indicator ];
 }
@@ -91,17 +90,17 @@ entry,
 prompt,
 button {
     spacing:    0;
-    text-color: #b4be98;
+    text-color: #94E2D5;
 }
 
 button.selected {
-    background-color: #282828;
-    text-color:       #d4be98;
+    background-color: #313244;
+    text-color:       #CDD6F4;
 }
 
 textbox-prompt-sep {
     expand:     false;
     str:        ":";
-    text-color: #b4be98;
+    text-color: #94E2D5;
     margin:     0 0.3em 0 0;
 }

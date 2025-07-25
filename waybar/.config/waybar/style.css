@@ -1,15 +1,17 @@
 * {
   border: none;
-  font-family: JetBrainsMono Nerd Font;
+  font-family: Mononoki Nerd Font;
   font-size: 12px;
   min-height: 0;
 }
 
+/* bar background: “crust” @ 97.5% */
 window#waybar {
-  background: rgba(35, 40, 42, 0.975); /* crust */
-  color: #cdd6f4; /* text */
+  background: rgba(30, 30, 46, 1);
+  color: #cdd6f4;
 }
 
+/* common padding */
 #workspaces,
 #clock,
 #pulseaudio,
@@ -19,26 +21,35 @@ window#waybar {
   padding: 0 10px;
 }
 
+/* workspaces container tweaks */
 #workspaces {
   margin: 2px 0;
   padding: 0 5px;
 }
 
+/* workspace buttons */
 #workspaces button {
   padding: 0 5px;
-  background: rgba(245, 240, 225, 0.2); /* Subtle beige background */
+  background: rgba(110, 106, 134, 0.2);
+  /* overlay0 @ 20% */
   color: #cdd6f4;
+  /* text */
   margin: 2px 0;
   border-radius: 0;
 }
 
+/* active workspace */
 #workspaces button.active {
-  background: #e0def4;
+  background: #cba6f7;
+  /* mauve */
   color: #1e1e2e;
+  /* base */
 }
 
+/* hover state */
 #workspaces button:hover {
-  background: rgba(100, 150, 150, 0.3); /* Teal/cyan hover */
+  background: rgba(148, 226, 213, 0.3);
+  /* teal @ 30% */
   box-shadow: inherit;
   text-shadow: inherit;
 }
