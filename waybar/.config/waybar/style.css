@@ -5,13 +5,11 @@
   min-height: 0;
 }
 
-/* bar background: “crust” @ 97.5% */
 window#waybar {
-  background: rgba(30, 30, 46, 1);
-  color: #cdd6f4;
+  background: rgba(28, 28, 28, 1);
+  color: #d4be98;
 }
 
-/* common padding */
 #workspaces,
 #clock,
 #pulseaudio,
@@ -21,35 +19,26 @@ window#waybar {
   padding: 0 10px;
 }
 
-/* workspaces container tweaks */
 #workspaces {
   margin: 2px 0;
   padding: 0 5px;
 }
 
-/* workspace buttons */
 #workspaces button {
   padding: 0 5px;
-  background: rgba(110, 106, 134, 0.2);
-  /* overlay0 @ 20% */
-  color: #cdd6f4;
-  /* text */
+  background: rgba(50, 48, 47, 0.2);
+  color: #d4be98;
   margin: 2px 0;
   border-radius: 0;
 }
 
-/* active workspace */
 #workspaces button.active {
-  background: #cba6f7;
-  /* mauve */
-  color: #1e1e2e;
-  /* base */
+  background: #a9b665;
+  color: #282828;
 }
 
-/* hover state */
 #workspaces button:hover {
-  background: rgba(148, 226, 213, 0.3);
-  /* teal @ 30% */
+  background: rgba(131, 165, 152, 0.3);
   box-shadow: inherit;
   text-shadow: inherit;
 }
