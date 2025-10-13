@@ -5,14 +5,14 @@ configuration {
 }
 
 * {
-  font: "Maple Mono NF 14";
+  font: "IosevkaTerm Nerd Font 14";
 }
 
 window {
   fullscreen: true;
   transparency: "real";
   padding: 36% 30%;
-  background-color: #28282895; /* Gruvbox Material Dark bg */
+  background-color: #14171d95;
   border-color: "transparent";
 }
 
@@ -25,7 +25,7 @@ listview {
 scrollbar {
     width:        4px;
     border:       0;
-    handle-color: #83a598; /* Gruvbox Material Dark green */
+    handle-color: #8a9a7b;
     handle-width: 8px;
     padding:      0 5;
 }
@@ -35,7 +35,7 @@ entry {
 }
 
 textbox {
-  text-color: #d4be98; /* Gruvbox Material Dark fg */
+  text-color: #c5c9c7;
 }
 
 element {
@@ -45,42 +45,57 @@ element {
 
 element.normal.normal {
   background-color: "transparent";
-  text-color: #d4be98; /* Gruvbox Material Dark fg */
+  text-color: #c5c9c7;
 }
 
 element.normal.urgent {
   background-color: "transparent";
-  text-color: #ea6962; /* Gruvbox Material Dark red */
+  text-color: #c4746e;
 }
 
 element.normal.active {
   background-color: "transparent";
-  text-color: #a9b665; /* Gruvbox Material Dark green */
+  text-color: #8a9a7b;
 }
 
 element.alternate.normal {
   background-color: "transparent";
-  text-color: #d4be98; /* Gruvbox Material Dark fg */
+  text-color: #c5c9c7;
 }
 
 element.alternate.urgent {
   background-color: "transparent";
-  text-color: #ea6962; /* Gruvbox Material Dark red */
+  text-color: #c4746e;
 }
 
 element.alternate.active {
   background-color: "transparent";
-  text-color: #a9b665; /* Gruvbox Material Dark green */
+  text-color: #8a9a7b;
+}
+
+element selected.normal {
+  background-color: #3E424A;
+  text-color: #c5c9c7;
+}
+
+element selected.urgent {
+  background-color: #3E424A;
+  text-color: #e46876;
+}
+
+element selected.active {
+  background-color: #3E424A;
+  text-color: #87a987;
 }
 
 sidebar {
   border: 2px 0 0;
-  border-color: #a9b665; /* Gruvbox Material Dark green */
+  border-color: #8a9a7b;
 }
 
 inputbar {
     spacing:    0;
-    text-color: #83a598; /* Gruvbox Material Dark green */
+    text-color: #8a9a7b;
     padding:    2px;
     children:   [ prompt, textbox-prompt-sep, entry, case-indicator ];
 }
@@ -90,17 +105,17 @@ entry,
 prompt,
 button {
     spacing:    0;
-    text-color: #83a598; /* Gruvbox Material Dark green */
+    text-color: #8a9a7b;
 }
 
 button.selected {
-    background-color: #3c3836; /* Gruvbox Material Dark bg0_h */
-    text-color:       #d4be98; /* Gruvbox Material Dark fg */
+    background-color: #3E424A;
+    text-color:       #c5c9c7;
 }
 
 textbox-prompt-sep {
     expand:     false;
     str:        ":";
-    text-color: #83a598; /* Gruvbox Material Dark green */
+    text-color: #8a9a7b;
     margin:     0 0.3em 0 0;
 }
