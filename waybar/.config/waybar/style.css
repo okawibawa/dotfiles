@@ -1,13 +1,13 @@
 * {
   border: none;
-  font-family: IosevkaTerm Nerd Font;
+  font-family: IoskeleyMono Nerd Font;
   font-size: 12px;
   min-height: 0;
 }
 
 window#waybar {
-  background: #14171d;
-  color: #c5c9c7;
+  background: #282828;
+  color: #d4be98;
 }
 
 #workspaces,
@@ -26,19 +26,20 @@ window#waybar {
 
 #workspaces button {
   padding: 0 5px;
-  background: #3E424A;
-  color: #c5c9c7;
+  background: #3c3836;
+  color: #d4be98;
   margin: 2px 0;
   border-radius: 0;
 }
 
 #workspaces button.active {
-  background: #8a9a7b;
-  color: #14171d;
+  background: #e78a4e;
+  color: #282828;
 }
 
 #workspaces button:hover {
-  background: #7aa89f;
+  background: #d8a657;
+  color: #282828;
   box-shadow: inherit;
   text-shadow: inherit;
 }

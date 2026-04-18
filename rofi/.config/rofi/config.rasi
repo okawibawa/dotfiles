@@ -5,14 +5,20 @@ configuration {
 }
 
 * {
-  font: "IosevkaTerm Nerd Font 14";
+  font: "IoskeleyMono Nerd Font 14";
+  bg: #282828;
+  fg: #d4be98;
+  accent: #e78a4e;
+  urgent: #ea6962;
+  active: #a9b665;
+  selected-bg: #3c3836;
 }
 
 window {
   fullscreen: true;
   transparency: "real";
   padding: 36% 30%;
-  background-color: #14171d95;
+  background-color: #28282895;
   border-color: "transparent";
 }
 
@@ -25,7 +31,7 @@ listview {
 scrollbar {
     width:        4px;
     border:       0;
-    handle-color: #8a9a7b;
+    handle-color: @accent;
     handle-width: 8px;
     padding:      0 5;
 }
@@ -35,7 +41,7 @@ entry {
 }
 
 textbox {
-  text-color: #c5c9c7;
+  text-color: @fg;
 }
 
 element {
@@ -45,57 +51,57 @@ element {
 
 element.normal.normal {
   background-color: "transparent";
-  text-color: #c5c9c7;
+  text-color: @fg;
 }
 
 element.normal.urgent {
   background-color: "transparent";
-  text-color: #c4746e;
+  text-color: @urgent;
 }
 
 element.normal.active {
   background-color: "transparent";
-  text-color: #8a9a7b;
+  text-color: @active;
 }
 
 element.alternate.normal {
   background-color: "transparent";
-  text-color: #c5c9c7;
+  text-color: @fg;
 }
 
 element.alternate.urgent {
   background-color: "transparent";
-  text-color: #c4746e;
+  text-color: @urgent;
 }
 
 element.alternate.active {
   background-color: "transparent";
-  text-color: #8a9a7b;
+  text-color: @active;
 }
 
 element selected.normal {
-  background-color: #3E424A;
-  text-color: #c5c9c7;
+  background-color: @selected-bg;
+  text-color: @accent;
 }
 
 element selected.urgent {
-  background-color: #3E424A;
-  text-color: #e46876;
+  background-color: @selected-bg;
+  text-color: @urgent;
 }
 
 element selected.active {
-  background-color: #3E424A;
-  text-color: #87a987;
+  background-color: @selected-bg;
+  text-color: @active;
 }
 
 sidebar {
   border: 2px 0 0;
-  border-color: #8a9a7b;
+  border-color: @accent;
 }
 
 inputbar {
     spacing:    0;
-    text-color: #8a9a7b;
+    text-color: @accent;
     padding:    2px;
     children:   [ prompt, textbox-prompt-sep, entry, case-indicator ];
 }
@@ -105,17 +111,17 @@ entry,
 prompt,
 button {
     spacing:    0;
-    text-color: #8a9a7b;
+    text-color: @accent;
 }
 
 button.selected {
-    background-color: #3E424A;
-    text-color:       #c5c9c7;
+    background-color: @selected-bg;
+    text-color:       @fg;
 }
 
 textbox-prompt-sep {
     expand:     false;
     str:        ":";
-    text-color: #8a9a7b;
+    text-color: @accent;
     margin:     0 0.3em 0 0;
 }
